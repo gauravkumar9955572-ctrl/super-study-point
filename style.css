@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: black;
+}
+
+.logo-img {
+  width: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* MENU */
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(black, navy);
+}
+
+button {
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+}
+
+/* CARDS */
+.card {
+  background: #1e293b;
+  margin: 15px auto;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
+
+/* FOOTER */
+.footer-logo {
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav {
+    display: none;
+    flex-direction: column;
+    background: black;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}/* ===== CENTER ADMISSION FORM ===== */
+.center-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  text-align: center;
+}
+
+/* FORM BOX */
+form {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(255,215,0,0.3);
+}
+
+/* INPUT STYLE */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
